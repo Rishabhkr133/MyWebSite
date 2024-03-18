@@ -1,0 +1,275 @@
+@import url('https:///fonts.goodleapis.com/css2?family=Poppins:wght@300;500;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary:#ffffff;
+    --secondary:#111827;
+    --textcolor:#32c766;
+
+}
+.switch{
+    --primary:#111827;
+    --secondary:#fff;
+
+
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background:var(--primary);
+    overflow: hidden;
+   
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    z-index: 222;
+
+    
+}
+
+
+.logo{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary);
+}
+.logo b{
+    color:var(--textcolor);
+}
+ul{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: right;
+    margin-right: 100px;
+  
+}
+
+ul li{
+    margin:0 20px;
+}
+ul li a{
+    display: block;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1;
+    color:var(--secondary);
+ }
+ul li:hover a{
+    color: var(--textcolor);
+}
+.hero{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+.hero1{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+.hero1 h1{
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--secondary);
+    z-index: 1111;
+}
+.hero span{
+    font: size 60px ;
+    font-weight: 600;
+    color: var(--textcolor);
+}
+.hero1 h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--textcolor);
+    margin: 10px;
+}
+.hero1 p{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 10px 0;
+}
+.hero1 .herob{
+    width: 100%;
+    margin-top: 20px;
+}
+.herob button{
+    border: none;
+    background-color: var(--textcolor);
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    box-shadow: 0 10px 10px 0 var(--secondary);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.herob button:hover{
+    transition: 0.2s ease-in-out;
+    padding: 10px 40px;
+    cursor:pointer;
+}
+
+.herolink{
+    /*padding: ;*/
+    position: absolute;
+    bottom: 110px;
+}
+.herolink i{
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: var(--secondary);
+    transition:0.5s ease ;
+}
+.herolink i:hover{
+    font-size: 50px;
+    color: var(--textcolor);
+    transition: 0.2s ease ;
+}
+.hero2{
+    overflow: hidden;
+}
+.heroimage{
+    position: relative;
+    width: 800px;
+    top: -50px;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+.heroimage img{
+    width: 100%;
+}
+.hero2:hover .heroimage{
+    transform: translateX(10px);
+}
+.toggleswitch .fa{
+    position: absolute;
+    font-size: 303--px;
+   top: 07%;   
+    left: 95%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+   /* bottom: 2%;*/
+}
+.fa-sun{
+    display: none;
+    color: #fff;
+
+}
+.switch .fa-sun{
+    display: block;
+
+}
+.switch .fa-moon{
+    display: none;
+}
+.home3 h1{
+    position: absolute;
+}
+.project{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background:var(--primary);
+    overflow: hidden;
+}
+.project1 {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 60px;
+    margin-top: 100px;
+
+}
+.project1 h1{
+    font-size: 50px;
+    color:var(--secondary);
+    font-weight: 600;
+    transition: 0.5s;
+    display: block;
+    margin-right: auto;
+}
+.project1 h1:hover{
+    color: var(--textcolor);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.project1 p{
+    margin-top: 10px;
+    font-size: 30px;
+    color: var(--secondary);
+
+}
+.pimg{
+    position: relative;
+    width: 700px;
+    top: -40px;
+    
+    transition: 0.3s ease;
+   margin-left: 700px;
+    
+    
+}
+.pimg img{
+    width: 100%;
+}
+.project2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 40px;
+    margin-top: 50%;
+}
+.project h1 {
+    width: auto;
+    
+    
+}
+.project2 img{
+    width: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+  }
+
+
